@@ -1,3 +1,9 @@
+<button><%= link_to 'Home', '/' %></button>
+<button><%= link_to 'About', '/about' %></button>
+<button><%= link_to 'Articles', '/articles' %></button>
+<button><%= link_to 'Create New Article', "/articles/new" %></button>
+<br/>
 <h1>Individual Article</h1>
 <p>Title: <%= @article.title %></p><br/>
 <p>Description: <%= @article.description %></p>
+<button><%= link_to 'Edit This Article', "/articles/#{@article[:id]}/edit" %></button>

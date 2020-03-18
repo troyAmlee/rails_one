@@ -1,1 +1,16 @@
 <h1>Articles</h1>
+<button><%= link_to 'Home', '/' %></button>
+<button><%= link_to 'About', '/about' %></button>
+<button><%= link_to 'Articles', '/articles' %></button>
+<button><%= link_to 'Create New Article', "/articles/new" %></button>
+<% @article.each do |a| %>
+
+  <div>
+    <hr/>
+    <button><%= link_to 'Show Article', "/articles/#{a[:id]}" %></button>
+    <button><%= link_to 'Edit Article', "/articles/#{a[:id]}/edit" %></button>
+    <p>title: <%= a.title %></p><br/>
+    <p>description: <%= a.description %></p><br/>
+    <hr/>
+  </div>
+<% end %>

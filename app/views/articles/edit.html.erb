@@ -1,13 +1,13 @@
-<h1>Create an Article!</h1>
+<h1>Editing Article <%= @article.id %></h1>
 <button><%= link_to 'Home', '/' %></button>
-<button><%= link_to 'About', '/about' %></button>
-<button><%= link_to 'Articles', '/articles' %></button>
+<button><%= link_to 'About', 'about' %></button>
+<button><%= link_to 'Articles', 'articles' %></button>
 <button><%= link_to 'Create New Article', "/articles/new" %></button>
 <% if @article.errors.any? %>
   <h2>The following errors prevented the article from getting created...</h2>
   <ul>
     <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+      <li><%= msg %></li>
     <% end %>
   </ul>
 <% end %>
