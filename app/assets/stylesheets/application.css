@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+.article_container {
+
+}
+
+.article {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2E2F30;
+    color: whitesmoke;
+}
+
+#titledec{
+    border: 2px solid green;
+}
+
+#buttons{
+    border: 2px solid red;
+    flex-direction: row;
+}
