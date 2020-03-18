@@ -4,6 +4,8 @@
 <button><%= link_to 'Create New Article', "/articles/new" %></button>
 <br/>
 <h1>Individual Article</h1>
-<p>Title: <%= @article.title %></p><br/>
-<p>Description: <%= @article.description %></p>
+<h3>Title: </h3>
+<p><%= @article.title %></p>
+<h3>Description: </h3>
+<p><%= @article.description %></p>
 <button><%= link_to 'Edit This Article', "/articles/#{@article[:id]}/edit" %></button>
